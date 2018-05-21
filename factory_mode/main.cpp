@@ -44,11 +44,6 @@ class ShapeFactory
 public:
     static std::unique_ptr<Shape> CreateShape(const std::string& shape_type)
     {
-        if ("" == shape_type)
-        {
-            return nullptr;
-        }
-
         if ("Rectangle" == shape_type)
         {
             return std::make_unique<Rectangle>();
@@ -60,6 +55,10 @@ public:
         else if ("Circle" == shape_type)
         {
             return std::make_unique<Circle>();
+        }
+        else
+        {
+            return nullptr;
         }
     }
 };
