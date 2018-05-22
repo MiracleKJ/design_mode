@@ -39,6 +39,7 @@ public:
     }
 };
 
+// 形状工厂
 class ShapeFactory
 {
 public:
