@@ -8,6 +8,7 @@
 class DrawAPI
 {
 public:
+    virtual ~DrawAPI() {}
     virtual void DrawCircle(int radius, int x, int y) = 0;
 };
 
@@ -35,6 +36,7 @@ class Shape
 {
 public:
     Shape(DrawAPI* draw_api) : draw_api_(draw_api) {}
+    virtual ~Shape() {}
 
 public:
     virtual void Draw() = 0;

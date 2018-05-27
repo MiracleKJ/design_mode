@@ -6,4 +6,8 @@
 ## 05 prototype pattern
 ## 06 adapter pattern
 ## 07 bridge pattern
+<<<<<<< HEAD
 ## 08 filter pattern
+=======
+## 08 filter pattern
+>>>>>>> 71bb98e593c397798f778fd49a076981e40fa6da

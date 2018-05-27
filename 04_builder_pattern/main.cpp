@@ -10,12 +10,14 @@
 class Packing
 {
 public:
+    virtual ~Packing(){}
     virtual std::string Pack() = 0;
 };
 
 class Item
 {
 public:
+    virtual ~Item(){}
     virtual std::string Name() = 0;
     virtual std::unique_ptr<Packing> PackingItem() = 0;
     virtual float Price() = 0;

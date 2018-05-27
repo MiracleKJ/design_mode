@@ -9,6 +9,7 @@
 class Shape
 {
 public:
+    virtual ~Shape(){}
     virtual void Draw() = 0;
 };
 

@@ -13,6 +13,8 @@ public:
     Shape(const std::string& type = "Shape") : type_(type)
     {}
 
+    virtual ~Shape(){}
+
     std::string GetType()
     {
         return type_;

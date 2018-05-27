@@ -9,6 +9,7 @@
 class Shape
 {
 public:
+    virtual ~Shape(){}
     virtual void Draw() = 0;
 };
 
@@ -42,6 +43,7 @@ public:
 class Color
 {
 public:
+    virtual ~Color(){}
     virtual void Fill() = 0;
 };
 
@@ -75,6 +77,7 @@ public:
 class AbstractFactory
 {
 public:
+    virtual ~AbstractFactory(){}
     virtual std::unique_ptr<Shape> CreateShape(const std::string& shape_type) = 0;
     virtual std::unique_ptr<Color> CreateColor(const std::string& color_type) = 0;
 };

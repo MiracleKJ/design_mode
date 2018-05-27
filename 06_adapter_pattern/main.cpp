@@ -9,12 +9,14 @@
 class MediaPlayer
 {
 public:
+    virtual ~MediaPlayer() {}
     virtual void Play(const std::string& audio_type,const std::string& file_name) = 0;
 };
 
 class AdvancedMediaPlayer
 {
 public:
+    virtual ~AdvancedMediaPlayer() {}
     virtual void PlayVlc(const std::string& file_name) = 0;
     virtual void PlayMp4(const std::string& file_name) = 0;
 };
