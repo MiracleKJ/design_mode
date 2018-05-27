@@ -51,6 +51,7 @@ private:
 class Criteria
 {
 public:
+    virtual ~Criteria() {}
     virtual std::list<Person> MeetCriteria(std::list<Person>& person_lst) = 0;
 };
 
