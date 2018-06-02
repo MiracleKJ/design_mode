@@ -5,5 +5,5 @@ set(CMAKE_CXX_COMPILER "clang++")
 set(CMAKE_CXX_STANDARD 17)
 set(out_name main.o)
 
-set(source_files ./main.cpp)
+set(source_files ./main.cpp ../09_composite_pattern/main.cpp)
 add_executable(${out_name} ${source_files})
