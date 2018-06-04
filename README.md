@@ -6,3 +6,6 @@
 ## 05 prototype pattern
 ## 06 adapter pattern
 ## 07 bridge pattern
+## 08 filter pattern
+## 09 composite pattern
+## 10 decorator pattern
